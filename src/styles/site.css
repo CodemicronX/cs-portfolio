@@ -40,7 +40,7 @@ body {
 :focus-visible { outline: 2px solid #92c7ff; outline-offset: 5px; }
 section:focus, main:focus { outline: none; }
 
-h1, h2, h3, h4 { text-wrap: balance; }
+.section-heading h2, .case-copy h3 { text-wrap: balance; }
 h2, h3, h4 { letter-spacing: -0.038em; }
 
 .container {
@@ -111,8 +111,10 @@ h2, h3, h4 { letter-spacing: -0.038em; }
   border-bottom: 1px solid var(--line);
 }
 
-@supports (backdrop-filter: blur(12px)) {
-  .site-header { background: rgb(8 11 18 / 0.82); backdrop-filter: blur(16px); }
+@media (min-width: 52rem) {
+  @supports (backdrop-filter: blur(12px)) {
+    .site-header { background: rgb(8 11 18 / 0.82); backdrop-filter: blur(16px); }
+  }
 }
 
 .header-content { min-height: var(--header-size); display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }

@@ -21,7 +21,7 @@ export function Hero() {
         <figure className="hero-art">
           <div className="art-grid" aria-hidden="true" />
           <picture>
-            <source media="(max-width: 42rem)" srcSet={`${publicAsset('images/orbital-640.webp')} 640w, ${publicAsset('images/orbital.webp')} 1080w`} sizes="92vw" />
+            <source media="(max-width: 42rem)" srcSet={publicAsset('images/orbital-640.webp')} />
             <img
               src={publicAsset('images/orbital.webp')}
               alt=""
